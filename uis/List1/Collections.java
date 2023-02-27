@@ -63,7 +63,10 @@ public class Collections {
 //		Collections.extractList(inputList, fromIndex, toIndex);
 		
 		//10.WAP to compare two ArrayList
-		Collections.compareTwoArrayList(inputList, inputList2);
+		//Collections.compareTwoArrayList(inputList, inputList2);
+		
+		//11.WAP to join two ArrayList.
+		Collections.joinTwoLists(inputList, inputList2);
 	}
 
 	public static void printListElements(List list) {
@@ -132,6 +135,13 @@ public class Collections {
 				System.out.print(" no ");
 			}
 		}
+		}
+	
+	public static void joinTwoLists(List list1,List list2) {
+		int n=list1.size();
+		list1.addAll(n, list2);
+		System.out.println(list1);
+		
 		}
 	}
 
