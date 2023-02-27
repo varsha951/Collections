@@ -34,9 +34,12 @@ public class Collections {
 //		Collections.retriveAnElement(inputList, index);
 		
 		//5. WAP to UPDATE SPECIFIC ELEMENT by given element.
-		Object o=new Object();
-     	o="red";
-		Collections.updateSpecificElement(inputList, o);
+//		Object o=new Object();
+//     	o="red";
+//		Collections.updateSpecificElement(inputList, o);
+		
+		//6. WAP to REMOVE THIRD ELEMENT from an ArrayList
+		Collections.removeThirdElement(inputList);
 	}
 
 	public static void printListElements(List list) {
@@ -64,6 +67,11 @@ public class Collections {
 		//list[2]=o;
 		System.out.println(" original list:"+list);
 		list.set(2, o);
+		System.out.println("after adding element"+list);
+		}
+	public static void removeThirdElement(List list) {
+		System.out.println(" original list:"+list);
+		list.remove(2);
 		System.out.println("after adding element"+list);
 		}
 	}
