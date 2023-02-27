@@ -39,7 +39,12 @@ public class Collections {
 //		Collections.updateSpecificElement(inputList, o);
 		
 		//6. WAP to REMOVE THIRD ELEMENT from an ArrayList
-		Collections.removeThirdElement(inputList);
+		//Collections.removeThirdElement(inputList);
+		
+		//7. WAP to SEARCH AN ELEMENT in an ArrayList.
+		Object o=new Object();
+		o="red";
+		Collections.searchElement(inputList, o);
 	}
 
 	public static void printListElements(List list) {
@@ -73,6 +78,16 @@ public class Collections {
 		System.out.println(" original list:"+list);
 		list.remove(2);
 		System.out.println("after adding element"+list);
+		}
+	
+	public static void searchElement(List list,Object o) {
+		System.out.println(" original list:"+list);
+		
+		if (list.contains(o)) {
+			System.out.println(o+" is present in list");
+		} else {
+			System.out.println(o+" is not present in list");
+		}
 		}
 	}
 
