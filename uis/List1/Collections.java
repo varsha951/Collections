@@ -30,8 +30,13 @@ public class Collections {
 //		Collections.insertAnElementAt0(inputList, o);
 		
 		//WAP to RETRIEVE an element (at a SPECIFIED INDEX) from a given ArrayList.
-		int index =2;
-		Collections.retriveAnElement(inputList, index);
+//		int index =2;
+//		Collections.retriveAnElement(inputList, index);
+		
+		//5. WAP to UPDATE SPECIFIC ELEMENT by given element.
+		Object o=new Object();
+     	o="red";
+		Collections.updateSpecificElement(inputList, o);
 	}
 
 	public static void printListElements(List list) {
@@ -55,6 +60,12 @@ public class Collections {
 	public static void retriveAnElement(List list ,int index) {
 		System.out.println(list.get(index));
 	}
+	public static void updateSpecificElement(List list ,Object o) {
+		//list[2]=o;
+		System.out.println(" original list:"+list);
+		list.set(2, o);
+		System.out.println("after adding element"+list);
+		}
 	}
 
 
