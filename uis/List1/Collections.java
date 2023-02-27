@@ -19,21 +19,21 @@ public class Collections {
 		Collections.printListElements(inputList);
 		
 		//WAP to ITERATE through all elements & MULTIPLY BY 2 in an ArrayList.
-//		System.out.println("Before Iterating : "+ inputList);
-//		ListTest.iterateAllElements(inputList);
+		System.out.println("Before Iterating : "+ inputList);
+		Collections.iterateAllElements(inputList);
 	}
 
 	public static void printListElements(List list) {
 
 		System.out.println(list);
 	}
-//	public static void iterateAllElements(List list) {
-//
-//				for(int i =0;i<list.size();i++) {
-//					int num = (int) list.get(i);
-//					System.out.print(2 * num+" ");
-//				}
-//	} 
+	public static void iterateAllElements(List list) {
+
+				for(int i =0;i<list.size();i++) {
+					int num = (int) list.get(i);
+					System.out.print(2 * num+" ");
+				}
+	} 
 	}
 
 
