@@ -75,7 +75,13 @@ public class Collections {
 		//Collections.checkIfEmpty(inputList2);
 		
 		//15.WAP to trim the capacity of an ArrayList the current list size. WAP to increase the size  of an ArrayList.
-		Collections.trimExtra(inputList);
+		//Collections.trimExtra(inputList);
+		
+		//16.WAP to replace the second element of an ArrayList with the specified element
+		Object o=new Object();
+    	o=23;
+		Collections.replaceSecondElement(inputList, o);
+		
 	}
 
 	public static void printListElements(List list) {
@@ -103,12 +109,12 @@ public class Collections {
 		//list[2]=o;
 		System.out.println(" original list:"+list);
 		list.set(2, o);
-		System.out.println("after adding element"+list);
+		System.out.println("after replacing element"+list);
 		}
 	public static void removeThirdElement(List list) {
 		System.out.println(" original list:"+list);
 		list.remove(2);
-		System.out.println("after adding element"+list);
+		System.out.println("after removing element"+list);
 		}
 	
 	public static void searchElement(List list,Object o) {
@@ -169,6 +175,14 @@ public class Collections {
 	public static void trimExtra(ArrayList list) {
 		list.trimToSize();
 		 System.out.println(list);
+		}
+	
+	
+	public static void replaceSecondElement(List list ,Object o) {
+		//list[2]=o;
+		System.out.println(" original list:"+list);
+		list.set(2, o);
+		System.out.println("after replace element"+list);
 		}
 	}
 
