@@ -69,7 +69,10 @@ public class Collections {
 		//Collections.joinTwoLists(inputList, inputList2);
 		
 		//13.WAP to empty an ArrayList.
-		Collections.emptyAnArrayList(inputList);
+		//Collections.emptyAnArrayList(inputList);
+		
+		//14.WAP to test an ArrayList is empty or not.
+		Collections.checkIfEmpty(inputList2);
 	}
 
 	public static void printListElements(List list) {
@@ -151,6 +154,12 @@ public class Collections {
 	public static void emptyAnArrayList(List list) {
 		 list.removeAll(list);
 		 System.out.println(list);
+		}
+	
+	
+	public static void checkIfEmpty(List list) {
+		 
+		 System.out.println(list.isEmpty());
 		}
 	}
 
