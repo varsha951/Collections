@@ -47,7 +47,12 @@ public class Collections {
 //		Collections.searchElement(inputList, o);
 		
 		//8. WAP to COPY ONE ARRAYLIST INTO ANOTHER.
-		Collections.copyArrayListToAnother(inputList);
+		//Collections.copyArrayListToAnother(inputList);
+		
+		//9. WAP to EXTRACT A PORTION OF AN ARRAYLIST.
+		int fromIndex=2;
+		int toIndex=5;
+		Collections.extractList(inputList, fromIndex, toIndex);
 	}
 
 	public static void printListElements(List list) {
@@ -98,6 +103,12 @@ public class Collections {
 		ArrayList list2=new ArrayList(list.size());
 		list2.addAll(list);
 		System.out.println("copied array list is"+list);
+		}
+	
+	public static void extractList(List list,int fromIndex,int toIndex) {
+		System.out.println(" original list:"+list);
+		
+		System.out.println("extracted portion of array list is"+list.subList(fromIndex, toIndex));
 		}
 	}
 
