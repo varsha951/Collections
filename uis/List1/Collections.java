@@ -122,13 +122,15 @@ public class Collections {
 		System.out.println("extracted portion of array list is"+list.subList(fromIndex, toIndex));
 		}
 	
-	public static void compareTwoArrayList(List list1,List list2) {
+	public static void compareTwoArrayList(ArrayList list1,ArrayList list2) {
 		//System.out.println(" original list:"+list1);
-		
-		if (list1.containsAll(list2)) {
-			System.out.println("both the lists are same");
-		} else {
-			System.out.println(" both the lists are same");
+	
+		for (int i = 0; i < list1.size(); i++) {
+			if (list1.get(i).equals(list2.get(i))) {
+				System.out.print(" yes ");
+			} else {
+				System.out.print(" no ");
+			}
 		}
 		}
 	}
