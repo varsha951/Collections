@@ -78,9 +78,12 @@ public class Collections {
 		//Collections.trimExtra(inputList);
 		
 		//16.WAP to replace the second element of an ArrayList with the specified element
-		Object o=new Object();
-    	o=23;
-		Collections.replaceSecondElement(inputList, o);
+//		Object o=new Object();
+//    	o=23;
+//		Collections.replaceSecondElement(inputList, o);
+		
+		//17.WAP to print all the elements of an ArrayList using the position of the elements.
+		Collections.printWithPosition(inputList);
 		
 	}
 
@@ -95,6 +98,14 @@ public class Collections {
 					System.out.print(2 * num+" ");
 				}
 				System.out.println();
+	}
+	public static void printWithPosition(List list) {
+		
+		for(int i =0;i<list.size();i++) {
+			int num = (int) list.get(i);
+			System.out.print( num+","+i+"   ");
+		}
+		System.out.println();
 	}
 	public static void insertAnElementAt0(List list,Object o) {
 		System.out.println(" original list:"+list);
