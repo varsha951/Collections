@@ -72,7 +72,10 @@ public class Collections {
 		//Collections.emptyAnArrayList(inputList);
 		
 		//14.WAP to test an ArrayList is empty or not.
-		Collections.checkIfEmpty(inputList2);
+		//Collections.checkIfEmpty(inputList2);
+		
+		//15.WAP to trim the capacity of an ArrayList the current list size. WAP to increase the size  of an ArrayList.
+		Collections.trimExtra(inputList);
 	}
 
 	public static void printListElements(List list) {
@@ -160,6 +163,12 @@ public class Collections {
 	public static void checkIfEmpty(List list) {
 		 
 		 System.out.println(list.isEmpty());
+		}
+	
+	
+	public static void trimExtra(ArrayList list) {
+		list.trimToSize();
+		 System.out.println(list);
 		}
 	}
 
