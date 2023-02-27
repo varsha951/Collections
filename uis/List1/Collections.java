@@ -25,9 +25,13 @@ public class Collections {
 		//Collections.iterateAllElements(inputList);
 		
 		//3. WAP to insert an element into the ArrayList at the FIRST position.
-		Object o=new Object();
-		o="red";
-		Collections.insertAnElementAt0(inputList, o);
+//		Object o=new Object();
+//		o="red";
+//		Collections.insertAnElementAt0(inputList, o);
+		
+		//WAP to RETRIEVE an element (at a SPECIFIED INDEX) from a given ArrayList.
+		int index =2;
+		Collections.retriveAnElement(inputList, index);
 	}
 
 	public static void printListElements(List list) {
@@ -47,6 +51,9 @@ public class Collections {
 		list.add(0, o);
 		
 		System.out.println("after adding element"+list);
+	}
+	public static void retriveAnElement(List list ,int index) {
+		System.out.println(list.get(index));
 	}
 	}
 
