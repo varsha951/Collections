@@ -66,7 +66,10 @@ public class Collections {
 		//Collections.compareTwoArrayList(inputList, inputList2);
 		
 		//11.WAP to join two ArrayList.
-		Collections.joinTwoLists(inputList, inputList2);
+		//Collections.joinTwoLists(inputList, inputList2);
+		
+		//13.WAP to empty an ArrayList.
+		Collections.emptyAnArrayList(inputList);
 	}
 
 	public static void printListElements(List list) {
@@ -143,6 +146,13 @@ public class Collections {
 		System.out.println(list1);
 		
 		}
+	
+	
+	public static void emptyAnArrayList(List list) {
+		 list.removeAll(list);
+		 System.out.println(list);
+		}
 	}
+
 
 
