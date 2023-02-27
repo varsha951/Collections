@@ -17,6 +17,14 @@ public class Collections {
 		inputList.add(40);
 		inputList.add(50);
 		
+		
+		ArrayList inputList2 = new ArrayList(5);
+		inputList2.add(10);
+		inputList2.add(20);
+		inputList2.add(30);
+		inputList2.add(40);
+		inputList2.add(50);
+		
 		//WAP to create a new ArrayList, add some colours (String) and PRINT out the collection
 		//Collections.printListElements(inputList);
 		
@@ -50,9 +58,12 @@ public class Collections {
 		//Collections.copyArrayListToAnother(inputList);
 		
 		//9. WAP to EXTRACT A PORTION OF AN ARRAYLIST.
-		int fromIndex=2;
-		int toIndex=5;
-		Collections.extractList(inputList, fromIndex, toIndex);
+//		int fromIndex=2;
+//		int toIndex=5;
+//		Collections.extractList(inputList, fromIndex, toIndex);
+		
+		//10.WAP to compare two ArrayList
+		Collections.compareTwoArrayList(inputList, inputList2);
 	}
 
 	public static void printListElements(List list) {
@@ -109,6 +120,16 @@ public class Collections {
 		System.out.println(" original list:"+list);
 		
 		System.out.println("extracted portion of array list is"+list.subList(fromIndex, toIndex));
+		}
+	
+	public static void compareTwoArrayList(List list1,List list2) {
+		//System.out.println(" original list:"+list1);
+		
+		if (list1.containsAll(list2)) {
+			System.out.println("both the lists are same");
+		} else {
+			System.out.println(" both the lists are same");
+		}
 		}
 	}
 
