@@ -42,9 +42,12 @@ public class Collections {
 		//Collections.removeThirdElement(inputList);
 		
 		//7. WAP to SEARCH AN ELEMENT in an ArrayList.
-		Object o=new Object();
-		o="red";
-		Collections.searchElement(inputList, o);
+//		Object o=new Object();
+//		o="red";
+//		Collections.searchElement(inputList, o);
+		
+		//8. WAP to COPY ONE ARRAYLIST INTO ANOTHER.
+		Collections.copyArrayListToAnother(inputList);
 	}
 
 	public static void printListElements(List list) {
@@ -88,6 +91,13 @@ public class Collections {
 		} else {
 			System.out.println(o+" is not present in list");
 		}
+		}
+	
+	public static void copyArrayListToAnother(List list) {
+		System.out.println(" original list:"+list);
+		ArrayList list2=new ArrayList(list.size());
+		list2.addAll(list);
+		System.out.println("copied array list is"+list);
 		}
 	}
 
