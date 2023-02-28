@@ -51,7 +51,12 @@ public class LinkedListDoc {
         // LinkedListDoc.getFirstAndLastElement(list);
          
          //11.WAP to display the elements and their positions in a LinkedList.
-         LinkedListDoc.getElementsAndIndex(list);
+        // LinkedListDoc.getElementsAndIndex(list);
+         
+         //12.WAP to remove a specified element from a LinkedList.
+         Object o=new Object();
+         o="red";
+         LinkedListDoc.removeAnElement(list, o);
 	}
 	public static void iterateAllElements(LinkedList list) {
 		for (int i = 0; i < list.size(); i++) {
@@ -86,6 +91,11 @@ public class LinkedListDoc {
 	public static void getFirstAndLastElement(LinkedList list) {
 		System.out.println("first element :"+list.getFirst());
 		System.out.println(" Last element :"+list.getLast());
+	}
+	public static void removeAnElement(LinkedList list,Object o) {
+		System.out.println("before removal :"+list);
+		list.remove(o);
+		System.out.println(" after removal :"+list);
 	}
 	
 	public static void getElementsAndIndex(LinkedList list) {
