@@ -18,7 +18,13 @@ public class LinkedListDoc {
          //System.out.println(list);
          
          //2. WAP to iterate through all elements in a LinkedList.
-         LinkedListDoc.iterateAllElements(list);
+         //LinkedListDoc.iterateAllElements(list);
+         
+         //5. WAP to insert the specified element at the specified position in the LinkedList.
+         int pos=3;
+         Object o=new Object();
+         o="purple";
+         LinkedListDoc.insertElementsAtSpecifiedPosition(list, pos, o);
          
 	}
 	public static void iterateAllElements(LinkedList list) {
@@ -27,5 +33,11 @@ public class LinkedListDoc {
 		}
 		System.out.println();
 	}
+	
+	public static void insertElementsAtSpecifiedPosition(LinkedList list,int pos,Object element) {
+		list.add(pos, element);
+		System.out.println(list);
+	}
 
 }
+
