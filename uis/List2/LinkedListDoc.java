@@ -48,7 +48,10 @@ public class LinkedListDoc {
 //         LinkedListDoc.insertElementsAtSpecifiedPosition(list, pos);
          
          //10.WAP to get the first and last elements in a LinkedList.
-         LinkedListDoc.getFirstAndLastElement(list);
+        // LinkedListDoc.getFirstAndLastElement(list);
+         
+         //11.WAP to display the elements and their positions in a LinkedList.
+         LinkedListDoc.getElementsAndIndex(list);
 	}
 	public static void iterateAllElements(LinkedList list) {
 		for (int i = 0; i < list.size(); i++) {
@@ -83,6 +86,13 @@ public class LinkedListDoc {
 	public static void getFirstAndLastElement(LinkedList list) {
 		System.out.println("first element :"+list.getFirst());
 		System.out.println(" Last element :"+list.getLast());
+	}
+	
+	public static void getElementsAndIndex(LinkedList list) {
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i)+":"+i+" ");
+		}
+		System.out.println();
 	}
 
 }
