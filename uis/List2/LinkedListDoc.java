@@ -28,11 +28,15 @@ public class LinkedListDoc {
          
          
          //6. WAP to insert elements into the LinkedList at the first and last position.
-         int pos=3;
+//         int pos=3;
+//        Object o=new Object();
+//        o="purple";
+//        LinkedListDoc.addFirstAddLast(list, pos, o);
+        
+        //7. WAP to insert the specified element at the front of a LinkedList.
         Object o=new Object();
         o="purple";
-         
-         LinkedListDoc.addFirstAddLast(list, pos, o);
+        LinkedListDoc.addToFront(list, o);
 	}
 	public static void iterateAllElements(LinkedList list) {
 		for (int i = 0; i < list.size(); i++) {
@@ -49,6 +53,10 @@ public class LinkedListDoc {
 		list.addFirst(element);
 		list.addLast(element);
 		
+		System.out.println(list);
+	}
+	public static void addToFront(LinkedList list,Object element) {
+		list.addFirst(element);
 		System.out.println(list);
 	}
 
