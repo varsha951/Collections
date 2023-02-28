@@ -44,8 +44,11 @@ public class LinkedListDoc {
 //      LinkedListDoc.addToEnd(list, o);
 //       
        //9. WAP to insert some elements at the specified position into a LinkedList.
-        int pos=3;
-         LinkedListDoc.insertElementsAtSpecifiedPosition(list, pos);
+//        int pos=3;
+//         LinkedListDoc.insertElementsAtSpecifiedPosition(list, pos);
+         
+         //10.WAP to get the first and last elements in a LinkedList.
+         LinkedListDoc.getFirstAndLastElement(list);
 	}
 	public static void iterateAllElements(LinkedList list) {
 		for (int i = 0; i < list.size(); i++) {
@@ -76,6 +79,10 @@ public class LinkedListDoc {
 		System.out.println("before inserting :"+list);
 		list.addAll(pos, list);
 		System.out.println(" after inserting :"+list);
+	}
+	public static void getFirstAndLastElement(LinkedList list) {
+		System.out.println("first element :"+list.getFirst());
+		System.out.println(" Last element :"+list.getLast());
 	}
 
 }
