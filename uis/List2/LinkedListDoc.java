@@ -15,8 +15,17 @@ public class LinkedListDoc {
          list.add("pink");
          list.add("yellow");
          
-         System.out.println(list);
+         //System.out.println(list);
          
+         //2. WAP to iterate through all elements in a LinkedList.
+         LinkedListDoc.iterateAllElements(list);
+         
+	}
+	public static void iterateAllElements(LinkedList list) {
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i)+":"+i+" ");
+		}
+		System.out.println();
 	}
 
 }
