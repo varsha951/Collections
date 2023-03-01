@@ -6,6 +6,7 @@ public class LinkedListDoc {
 
 	public static void main(String[] args) {
 		LinkedList list=new LinkedList();
+		LinkedList list2=new LinkedList();
 		
 		//1. WAP to append the specified element to the end of a LinkedList.
          list.add("red");
@@ -14,6 +15,12 @@ public class LinkedListDoc {
          list.add("white");
          list.add("pink");
          list.add("yellow");
+         list2.add("hello");
+         list2.add("hell");
+         list2.add("hel");
+         list2.add("he");
+         list2.add("h");
+         list2.add("");
          
          //System.out.println(list);
          
@@ -62,7 +69,38 @@ public class LinkedListDoc {
          //LinkedListDoc.removeFirstAddLast(list);
          
          //14.WAP to remove all the elements from a LinkedList.
-         LinkedListDoc.RemoveAllTheElements(list);
+         //LinkedListDoc.RemoveAllTheElements(list);
+         
+         //15.WAP of swap two elements in a LinkedList.
+         
+         
+         
+         //16. WAP to shuffle the elements in a LinkedList.
+         
+         
+         
+         //17. WAP to join two LinkedLists.
+         //LinkedListDoc.joinTwoLists(list, list2);
+         
+         //19. WAP to remove and return the first element of a LinkedList.
+         System.out.println(LinkedListDoc.removeAndReturnFirst(list));
+	}
+	
+//	public static void swapingTwoElements(LinkedList list) {
+//		System.out.println("before swaping :"+list);
+//		list.so
+//	}
+	
+	public static Object removeAndReturnFirst(LinkedList list) {
+		return list.pop();
+	}
+	
+	public static void joinTwoLists(LinkedList list1,LinkedList list2) {
+		LinkedList list_1=list1;
+		LinkedList list_2=list2;
+		
+		list1.addAll(list2);
+		System.out.println(list1);
 	}
 	public static void iterateAllElements(LinkedList list) {
 		for (int i = 0; i < list.size(); i++) {
