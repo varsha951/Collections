@@ -54,9 +54,12 @@ public class LinkedListDoc {
         // LinkedListDoc.getElementsAndIndex(list);
          
          //12.WAP to remove a specified element from a LinkedList.
-         Object o=new Object();
-         o="red";
-         LinkedListDoc.removeAnElement(list, o);
+        // Object o=new Object();
+   //      o="red";
+     //    LinkedListDoc.removeAnElement(list, o);
+         
+         //13.WAP to remove the first and last element from a LinkedList.
+         LinkedListDoc.removeFirstAddLast(list);
 	}
 	public static void iterateAllElements(LinkedList list) {
 		for (int i = 0; i < list.size(); i++) {
@@ -74,6 +77,13 @@ public class LinkedListDoc {
 		list.addLast(element);
 		
 		System.out.println(list);
+	}
+	public static void removeFirstAddLast(LinkedList list) {
+		System.out.println("before removal :"+list);
+		list.removeFirst();
+		list.removeLast();
+		
+		System.out.println("after removal :"+list);
 	}
 	public static void addToFront(LinkedList list,Object element) {
 		list.offerFirst(element);
