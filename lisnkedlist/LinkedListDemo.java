@@ -109,10 +109,7 @@ public class LinkedListDemo {
 //		}
 	
 	
-	public static void retriveAnElement(LinkedList list) {
-		System.out.println(list.peekFirst());
-		list.
-	}
+	
 	
 //	public static void copareTwoList(LinkedList list1,LinkedList list2) {
 //		
